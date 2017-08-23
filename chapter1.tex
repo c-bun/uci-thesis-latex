@@ -1,3 +1,5 @@
+%SourceDoc thesis.tex
+
 \chapter{Introduction}
 Imaging tools enable researchers to ``see" inside tissues and
 cells and monitor biological features in real time. While
@@ -16,7 +18,7 @@ glowing organisms (e.g., fireflies). All bioluminescent species
 produce light via the luciferase-catalyzed oxidation of a small
 molecule luciferin. Luciferase enzymes and luciferin substrates
 can be imported into diverse cell types and engineered to
-report on biological processes.2 The bioluminescent signal is
+report on biological processes.\cite{RN26} The bioluminescent signal is
 inherently weak (especially when compared to conventional
 fluorescence imaging), but there is virtually no background
 emission. Fluorescence imaging, by contrast, relies on light-based
@@ -27,10 +29,10 @@ exquisitely sensitive imaging even in heterogeneous tissues. In
 fact, bioluminescent probes can be preferred to fluorescent
 tools for long-term cell tracking in rodent and other opaque
 models. One can serially image luciferase reporters without
-detriment to organisms and without knowing ?when and
-where? to apply excitation light.
+detriment to organisms and without knowing ``when and
+where" to apply excitation light.
 The versatility of bioluminescence has enabled a broad range
-of biological studies, although limitations persist.2 This imaging
+of biological studies, although limitations persist.\cite{RN26} This imaging
 modality has long been plagued by a lack of bright, easily
 distinguishable probes and poor spatial resolution. However,
 advances in luciferin chemistry and luciferase engineering have
@@ -38,23 +40,24 @@ begun to address these issues. This perspective will highlight
 recent achievements in developing new and improved imaging
 tools. Collectively, the bioluminescent probes are addressing
 long-standing voids in imaging capabilities and are being
-applied to ?seeing? biology beyond the culture dish.
+applied to ``seeing" biology beyond the culture dish.
 \section{Bioluminescence Basics}
 Millions of luciferases exist in the natural world, but
-phylogenetically related enzymes use the same luciferin.3 The
+phylogenetically related enzymes use the same luciferin.\cite{Martini:2017ig} The
 identities of such luciferins remain exceedingly difficult to
 characterize, and of those reported to date, only two have found
-routine application in mammalian cell imaging.2 The first, Dluciferin
-(Figure 1A), is used by the firefly and a number of
+routine application in mammalian cell imaging.\cite{RN26} The first, Dluciferin
+(Figure \ref{fig:luc_oxidation}A), is used by the firefly and a number of
 other terrestrial organisms to produce light. The second,
-coelenterazine (Figure 1B), is a molecule found in bioluminescent
+coelenterazine (Figure \ref{fig:luc_oxidation}B), is a molecule found in bioluminescent
 sea creatures, including the sea pansy Renilla
 reniformis and deep-sea copepods Gaussia princeps and
 Oplophorus gracilirostris. 
 
-\begin{figure}
-\includegraphics{chapter1/figure1}
-\caption{Popular luciferase?luciferin pairs for cellular imaging. (A) DLuciferin
+\begin{figure}[htbp]
+\includegraphics{chapter1/figure1_2}
+\centering
+\caption{Popular luciferase-luciferin pairs for cellular imaging. (A) DLuciferin
 is oxidized by firefly luciferase (Fluc) to produce oxyluciferin
 and a photon of light. (B) Coelenterazine is oxidized by a variety of
 marine luciferases, including Renilla luciferase (Rluc), Gaussia
@@ -69,32 +72,32 @@ structures, D-luciferin and coelenterazine use a similar
 mechanism for light production: the cognate luciferases oxidize
 the small molecules to generate excited state oxyluciferins;
 relaxation of these molecules to the ground state results in
-photon emission (Figure 1).
+photon emission (Figure \ref{fig:luc_oxidation}).
 The color of light released is primarily dictated by the small
 molecule luciferin. In the case of D-luciferin, the aromatic core
-is sufficiently extended to provide yellow-green (?560 nm)
-light. For coelenterazine, the ? system of the putative emitter is
-shorter, resulting in blue wavelengths (?475 nm) of emission.
+is sufficiently extended to provide yellow-green ($\approx$ 560 nm)
+light. For coelenterazine, the $\pi$ system of the putative emitter is
+shorter, resulting in blue wavelengths ($\approx$ 475 nm) of emission.
 The luciferase environment can further modulate bioluminescent
 color. Thus, enzymes that use the exact same substrate can
 emit different wavelengths. In some cases, the emission spectra
-are sufficiently resolved to enable multicolor imaging.4
+are sufficiently resolved to enable multicolor imaging.\cite{Suzuki:2016jw}
 Discriminating among related luciferases in vivo, though,
 remains difficult because of their broad emission spectra and
-the strong absorption of <650 nm light.5
+the strong absorption of $>$650 nm light.\cite{Zhao:2005if}
 \section{Building better bioluminescent tools}
 Luciferases and luciferins have been used for decades to image
 biomolecules, gene expression, and even whole cells, but the
-most popular probes are not without limitation.2 The poor
+most popular probes are not without limitation.\cite{RN26} The poor
 tissue penetrance of many luciferins has historically precluded
 sensitive imaging in hard-to-access tissues (e.g., brain).
-Additionally, only a limited ?palette? of bioluminescent probes
+Additionally, only a limited palette of bioluminescent probes
 exists, hindering efforts to visualize multicellular or other
 multicomponent processes. Chemical and biological approaches
 are beginning to address the need for improved and
 more diverse collections of bioluminescent probes.
-Streamlined and Scalable Luciferin Syntheses. Most
-bioluminescence imaging studies require an exogenously
+\subsection*{Streamlined and Scalable Luciferin Syntheses} 
+Most bioluminescence imaging studies require an exogenously
 delivered luciferin. For in vivo work, the doses can range
 between 1 and 5 mg per mouse per imaging point. Thus,
 large--and often prohibitively expensive--quantities of luciferin
@@ -106,15 +109,15 @@ In recent years, improved methods for producing luciferins
 have been reported. In the case of D-luciferin, we developed a
 streamlined method for accessing the requisite benzothiazole
 core using Appel?s salt and modern C?H activation (Figure
-2).6 This approach improved the yield and generalizability of
+2).\cite{McCutcheon:2012ixb} This approach improved the yield and generalizability of
 the synthesis, eliminating the need for multiple functional
 group conversions used in previous routes. The strategy has
 enabled multigram syntheses of D-luciferin and has proven to
 be quite modular. In fact, we and others have used this
-chemistry to produce more than 30 distinct analogues.7 Many
+chemistry to produce more than 30 distinct analogues.\cite{Woodroofe:2012vx} Many
 of these scaffolds also comprise key functional handles for latestage
 diversification (Figure 2). Efforts to expediently
-synthesize amino luciferins8 and related analogues9 are similarly
+synthesize amino luciferins\cite{Hauser:2016jt} and related analogues\cite{Anderson:2017hb} are similarly
 facilitating more widespread use of bioluminescent tools.
 Improved methods for accessing coelenterazine analogues
 are also advancing imaging studies. Historically, coelenterazine
@@ -122,17 +125,17 @@ synthesis relied on condensation of glyoxal derivatives with
 strong acid and elevated temperatures. These conditions are
 incompatible with a diverse array of desired analogues. Kirkland
 and colleagues identified milder conditions to access the
-coelenterazine core via Horner?Wadsworth?Emmons olefination.10
+coelenterazine core via Horner-Wadsworth-Emmons olefination.\cite{Shakhmin:2016bd}
 The method proved to be both scalable and generalizable,
 providing a range of useful analogues. Recent advances
 in cross-coupling methodology are similarly enabling access to
-diverse coelenterazine architectures.11
+diverse coelenterazine architectures.\cite{Hosoya:2015iu}
 Brighter and More Colorful Probes. Bioluminescence
 imaging to date has been largely confined to imaging one or
 two colors at a time. Accessing a full spectrum of emitters has
 been a long-standing goal, with obvious parallels to
 fluorescence imaging. Early efforts to modulate color and
-brightness primarily focused on the luciferase enzyme.2 Recent
+brightness primarily focused on the luciferase enzyme.\cite{RN26} Recent
 years, though, have seen a shift in focus to modulating the small
 molecule (Figure 3).
 Because the structure of the luciferin emitter influences
