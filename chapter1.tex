@@ -57,7 +57,7 @@ Oplophorus gracilirostris.
 \begin{figure}[htbp]
 \includegraphics[width=85 mm]{chapter1/figure1_2}
 \centering
-\caption{Popular luciferase-luciferin pairs for cellular imaging. (A) DLuciferin
+\caption[Popular luciferase-luciferin pairs for cellular imaging]{Popular luciferase-luciferin pairs for cellular imaging. (A) DLuciferin
 is oxidized by firefly luciferase (Fluc) to produce oxyluciferin
 and a photon of light. (B) Coelenterazine is oxidized by a variety of
 marine luciferases, including Renilla luciferase (Rluc), Gaussia
@@ -113,7 +113,7 @@ core using Appel's salt and modern C-H activation (Figure \ref{fig:luc_derivativ
 \begin{figure}[htbp]
 \includegraphics[width= 85 mm]{chapter1/figure2_v3}
 \centering
-\caption{Recently synthesized luciferin heterocycles. (A) D-Luciferin
+\caption[Recently synthesized luciferin heterocycles]{Recently synthesized luciferin heterocycles. (A) D-Luciferin
 and related analogues can be accessed using Appel's salt and C-H
 activation chemistry. (B) A diverse array of coelenterazine analogues
 have been synthesized in recent years.}
@@ -153,7 +153,7 @@ molecule (Figure \ref{fig:luc_spectrum}).
 \begin{figure}[htbp]
 \includegraphics[width= \textwidth]{chapter1/spectrum_revision}
 \centering
-\caption{Palette of luciferin analogues. Native luciferins are highlighted with colored boxes. Brackets denote the wavelength (nanometers) of
+\caption[Palette of luciferin analogues]{Palette of luciferin analogues. Native luciferins are highlighted with colored boxes. Brackets denote the wavelength (nanometers) of
 maximal bioluminescence emission observed upon incubation of the compound with luciferase. While many analogues can provide unique colors of
 light, most are not efficiently processed by native luciferases.}
   \label{fig:luc_spectrum}
@@ -168,15 +168,15 @@ light emission. Miller and coworkers applied this strategy to Dluciferin,
 replacing the rotationally flexible 6' electron-donating
 group with a conformationally locked amine.\cite{Reddy:2010gaa} This configuration
 enabled enhanced donation of electrons to the luciferin
-core and more robust, red-shifted emission compared to that of\cite{Chu:2016im}
-related probes. Moreover, many of the cyclic luciferin (CycLuc)
+core and more robust, red-shifted emission compared to that of
+related probes.\cite{Chu:2016im} Moreover, many of the cyclic luciferin (CycLuc)
 scaffolds were viable substrates for Fluc, highlighting the
 promiscuity of the enzyme.
 Fluc can also process luciferin analogues with extended
 aromatic cores and modified heteroatoms, providing additional
 avenues for wavelength alteration.\cite{McCutcheon:2012ixb,Woodroofe:2012vx,RN100} $\pi$-Extended chromophores
 typically emit red-shifted light emission.\cite{Kuchimaru:2016eba} In the case of
-the vinyl-extended luciferins (Figure \ref{fig:luc_spectrum}), the shift was >100 nm.
+the vinyl-extended luciferins (Figure \ref{fig:luc_spectrum}), the shift was $>$100 nm.
 It should be noted, though, that these and other extended
 analogues are often poorly processed by Fluc itself; red-shifted
 emission comes at the expense of enzyme turnover and thus
@@ -194,10 +194,26 @@ Bioluminescent color and photon output can also be
 drastically modulated via bioluminescent resonance energy
 transfer (BRET). A recent fusion of NanoLuc (an optimized
 mutant luciferase, discussed below) to CyOFP1 [dubbed
-Antares (Figure xxA)] resulted in an emission shift of 114 nm
-(Figure xxB).\cite{Chu:2016im} Antares is one of the most red-shifted BRET
+Antares (Figure \ref{fig:antares}A)] resulted in an emission shift of 114 nm
+(Figure \ref{fig:antares}B).\cite{Chu:2016im} 
+
+\begin{figure}[htbp]
+\includegraphics[width= 85 mm]{chapter1/antares_2}
+\centering
+\caption[BRET for deep-tissue imaging]{BRET for deep-tissue imaging. (A) Antares comprises a
+fusion of NanoLuc with two cyan-excitable orange fluorescent proteins
+(CyOFP1). (B) The BRET fusion exhibits red-shifted emission
+relative to NanoLuc. ONL denotes Orange Nanolantern. (C) Antares enabled
+sensitive imaging with low luciferin levels in mice. Antares and
+Fluc genes were delivered to the liver via hydrodynamic injection.
+Luciferins were supplied intravenously. Adapted with permission from
+ref \cite{Chu:2016im}.}
+  \label{fig:antares}
+\end{figure}
+
+Antares is one of the most red-shifted BRET
 pairs reported to date, enabling enhanced deep-tissue imaging
-in vivo (Figure xxC). In related work, Nagai and colleagues
+in vivo (Figure \ref{fig:antares}C). In related work, Nagai and colleagues
 linked a mutant Renilla luciferase to Venus, a version of yellow
 fluorescent protein.\cite{Saito:2012gs} Unexpectedly, this construct (dubbed
 Nanolantern) produced 6-fold more photons than the
@@ -208,14 +224,14 @@ enabling sensitive imaging of many biological processes,
 including membrane voltage\cite{Inagaki:2017kj} and gene expression.\cite{Horikiri:2017bt}
 \subsection*{In Vivo Improvements}
 Luciferins can access most tissues, but their distribution and cell permeability are suboptimal and
-not uniform.22 Chemical tinkering and med-chem optimization
+not uniform.\cite{RN101} Chemical tinkering and med-chem optimization
 can improve the bioavailabilities of the substrates. For example,
 many of the CycLuc scaffolds that comprise more lipophilic
-amino modifications (vs ?OH groups) exhibit improved tissue
-penetrance in vivo.23 Far less compound is required for a given
+amino modifications (vs -OH groups) exhibit improved tissue
+penetrance in vivo.\cite{RN98} Far less compound is required for a given
 imaging session compared to native luciferins. Further
 amidation of a CycLuc probe enhanced its transport across
-the blood?brain barrier (Figure 5).21 Once the probe is in the
+the blood?brain barrier (Figure 5).\cite{Mofford:2015br} Once the probe is in the
 brain, the amide bond can be cleaved by endogenous fatty acid
 amide hydrolase (strongly expressed in brain tissue), releasing a
 functional luciferin.
@@ -225,9 +241,9 @@ above came at the expense of luciferase turnover (and thus light
 output). Consequently, recent efforts to build improved
 bioluminescence tools have focused on identifying new
 substrates and enzymes in parallel. One source of new
-luciferase?luciferin pairs is nature itself. Bioluminescent
-organisms (and potentially new luciferase?luciferin pairs) are
-continually being described,24 though the need for optimized
+luciferase-luciferin pairs is nature itself. Bioluminescent
+organisms (and potentially new luciferase-luciferin pairs) are
+continually being described,\cite{Purtov:2015hx} though the need for optimized
 probes far outpaces their discovery. Others have turned to
 engineering existing luciferases to better use chemically
 modified luciferins. In one example, Miller identified mutant
@@ -235,44 +251,57 @@ luciferases that can more readily process CycLuc derivatives.
 These analogues were previously demonstrated to be viable
 substrates for Fluc, although oxyluciferin products inhibited the
 reaction. Substrate inhibition was relieved and long-lived light
-emission restored with mutant enzymes.25 The authors later
+emission restored with mutant enzymes.\cite{Harwood:2011gl} The authors later
 identified a mutant that preferred a luciferin analogue over Dluciferin,
 setting the stage for developing substrate-responsive
-enzymes.26 Further work by the Miller group revealed ?latent?
+enzymes.\cite{RN97} Further work by the Miller group revealed latent
 luciferase activity in a fatty acyl-CoA synthetase from the
-fruitfly.27 Interestingly, this enzyme did not emit light with Dluciferin?it
-was able to use only a CycLuc substrate?opening
+fruitfly.\cite{RN165} Interestingly, this enzyme did not emit light with Dluciferin--it
+was able to use only a CycLuc substrate--opening
 the door to pairing unnatural luciferin analogues with
 evolutionary relatives of luciferase.
 Another engineered bioluminescent enzyme that has seen
 widespread adoption in recent years is NanoLuc, a derivative of
-Oplophorus luciferase (Oluc).28 Early work in this area was
+Oplophorus luciferase (Oluc).\cite{Hall:2012cda} Early work in this area was
 motivated by the need for improved coelenterazines (molecules
 prone to autoxidation and exhibiting poor tissue penetrance)
 and Oluc subunits (enzyme fragments prone to instability).
 Seeking a brighter and more stable luciferin, Wood and
 colleagues replaced the electron-rich phenols of coelenterazine
 with phenyl and furan groups. The resulting molecule
-[furimazine (Figure 3)] was more stable in media and lysate
+[furimazine (Figure \ref{fig:luc_spectrum})] was more stable in media and lysate
 and less susceptible to nonspecific oxidation. Directed
 evolution was used to select an enzyme that could readily
 catalyze light emission from the designer luciferin. The
-?winning? mutant (NanoLuc) contained a total of 16
+winning mutant (NanoLuc) contained a total of 16
 mutations, an impressive number for a 16 kDa protein.
 NanoLuc exhibits a high turnover rate with furimazine,
 providing robust signal output. Such high photon flux values
 are enabling sensitive imaging in complex tissue samples, even
-point-of-care diagnostics with simple cell phone cameras.29 We
-anticipate that the popularity of the NanoLuc?furimazine pair
+point-of-care diagnostics with simple cell phone cameras.\cite{Griss:2014de} We
+anticipate that the popularity of the NanoLuc-furimazine pair
 will continue to surge in the near term.
+
 Tandem modification of bioluminescent enzymes and
 substrates is also enabling multicomponent bioluminescence
 imaging. In contrast to in vitro assays, imaging in vivo often
 precludes spectroscopic resolution of colored probes. Blood
-and tissue restrict the passage of wavelengths shorter than red,5
-and bioluminescence spectra are broad,31 necessitating an
+and tissue restrict the passage of wavelengths shorter than red,\cite{Zhao:2005if}
+and bioluminescence spectra are broad,\cite{Rumyantsev:2016fd} necessitating an
 alternative approach. Substrate resolution is one such strategy
-(Figure 6A). This approach requires multiple selective,
+(Figure \ref{fig:jacs_summary}A). 
+
+\begin{figure}[htbp]
+\includegraphics[width= \textwidth]{chapter1/figure6}
+\centering
+\caption[Orthogonal luciferin-luciferase pairs for multicomponent imaging]{Orthogonal luciferin-luciferase pairs for multicomponent imaging. (A) A strategy for multicomponent bioluminescence imaging with
+luciferin analogues and mutant luciferases. (B) The 4? and 7? sites of D-luciferin were targeted to preclude binding to native Fluc. (C) Substrate
+resolution was achieved in mouse DB7 cells using 4?- and 7?-modified luciferins and mutant luciferases identified from screening. Adapted with
+permission from ref \cite{Jones:2017be}.}
+  \label{fig:jacs_summary}
+\end{figure}
+
+This approach requires multiple selective,
 mutually orthogonal luciferin?luciferase pairs. These pairs
 produce light together but will not react with other mutants or
 enzymes. Orthogonal pairs already exist in nature (e.g., firefly
@@ -316,6 +345,7 @@ Light emission was strongest in areas of cellular contact.
 Nitroreductase is not expressed endogenously in mammalian
 cells, making this technology ripe for in vivo applications where
 high spatial sensitivity is required.
+
 A second class of cell contact sensors uses split reporters,
 originally developed to image protein?protein interactions
 (Figure 7B). We expanded on this concept to generate split
