@@ -1,6 +1,6 @@
 %&pdflatex
 % This is a template for Ph.D. dissertations in the UCI format.
-% 
+%
 % All fonts, including those for sub- and superscripts, must be 10
 % points or larger.  Recommended sizes are 14-point for chapter
 % headings, 12-point for the main body of text and figure/table
@@ -27,6 +27,7 @@
 \usepackage{tabularx}
 \usepackage{notoccite} % fixes citation numbering when captions have citations
 \usepackage{achemso}
+\usepackage{chapterbib} % allows separate bib for each chapter(?)
 
 % plainpages=false fixes the "duplicate ignored" error with page counters
 % Set pdfborder to 0 0 0 to disable colored borders around PDF hyperlinks
@@ -78,12 +79,15 @@
 % Very handy to speed up compilation if you're working on a certain
 % part of your thesis. It conserves page numbers, references, etc.
 % even for non-included files.
-%\includeonly{chapter1}
+\includeonly{chapter1}
 
 % Some customization for figures:
 \graphicspath{ {figures/} }
 \renewcommand{\floatpagefraction}{.8}
-%\renewcommand
+
+% Some customization for writing easier.
+\newcommand{\dluciferin}{{\footnotesize D}-luciferin}
+\newcommand{\dluc}{{\footnotesize D}-luc}
 
 \begin{document}
 
@@ -102,9 +106,9 @@
 \phantomsection
 
 % "References should be formatted in style most common in discipline",
-% abbrv is only a suggestion.
-\bibliographystyle{achemso}
-\bibliography{thesis}
+% abbrv is only a suggestion. Comment out if formatting for a bib after each chapter.
+%\bibliographystyle{achemso}
+%\bibliography{thesis}
 
 % The Thesis Manual says not to include appendix figures and tables in
 % the List of Figures and Tables, respectively, so these commands from
