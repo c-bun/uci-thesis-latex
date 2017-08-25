@@ -208,8 +208,14 @@ INPUT ./figures/chapter2/fig3.pdf
 INPUT ./figures/chapter2/fig3.pdf
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/ucs/data/uni-0.def
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/ucs/data/uni-0.def
+INPUT figures/chapter2/fig4.pdf
+INPUT ./figures/chapter2/fig4.pdf
+INPUT ./figures/chapter2/fig4.pdf
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/ucs/data/uninames.dat
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/ucs/data/uninames.dat
+INPUT figures/chapter2/fig5.pdf
+INPUT ./figures/chapter2/fig5.pdf
+INPUT ./figures/chapter2/fig5.pdf
 INPUT chapter2.bbl
 INPUT chapter2.bbl
 INPUT thesis.aux
