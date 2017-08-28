@@ -166,8 +166,6 @@ INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/ucs/data/uni-34.def
-INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/ucs/data/uni-34.def
 OUTPUT thesis.toc
 INPUT thesis.lof
 INPUT thesis.lof
@@ -181,6 +179,8 @@ INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 OUTPUT chapter2.aux
 INPUT chapter2.tex
 INPUT chapter2.tex
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/ucs/data/uni-34.def
+INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/ucs/data/uni-34.def
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
@@ -213,6 +213,9 @@ INPUT ./figures/chapter2/fig4.pdf
 INPUT ./figures/chapter2/fig4.pdf
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/ucs/data/uninames.dat
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/ucs/data/uninames.dat
+INPUT figures/chapter2/table1.pdf
+INPUT ./figures/chapter2/table1.pdf
+INPUT ./figures/chapter2/table1.pdf
 INPUT figures/chapter2/fig5.pdf
 INPUT ./figures/chapter2/fig5.pdf
 INPUT ./figures/chapter2/fig5.pdf
