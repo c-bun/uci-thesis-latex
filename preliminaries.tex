@@ -45,7 +45,7 @@
 \acknowledgments
 {
   I would like to thank the National Science Foundation for funding through the Graduate Research Fellowship Program (grant No. DGE-1321846, and Allergan for funding through the Allergan Graduate Fellowship. I would also like to thank the members of the Prescher lab, Bernard Choi, and Bruce Tromberg, for very helpful discussions. xxx
-  
+
   You also need to acknowledge any publishers of your previous
   work who have given you permission to incorporate that work
   into your dissertation. See Section 3.2 of the UCI Thesis and
@@ -56,7 +56,7 @@
 % Some custom commands for your list of publications and software.
 \newcommand{\mypubentry}[3]{
   \begin{tabular*}{1\textwidth}{@{\extracolsep{\fill}}p{4.5in}r}
-    \textbf{#1} & \textbf{#2} \\ 
+    \textbf{#1} & \textbf{#2} \\
     \multicolumn{2}{@{\extracolsep{\fill}}p{.95\textwidth}}{#3}\vspace{6pt} \\
   \end{tabular*}
 }
@@ -77,7 +77,7 @@
 {
 
 \textbf{EDUCATION}
-  
+
   \begin{tabular*}{1\textwidth}{@{\extracolsep{\fill}}lr}
     \textbf{Doctor of Philosophy in Computer Science} & \textbf{2012} \\
     \vspace{6pt}
@@ -129,7 +129,11 @@
 % supposedly somewhat of a soft constraint.
 \thesisabstract
 {
-  The abstract of your contribution goes here.
+Genetically-encoded fluorescent probes have revolutionized our understanding of biological systems. However, the transition of fluorescent probes in vivo has been hampered by the opacity of tissue and its propensity for autofluorescence. A complementary imaging technology, bioluminescence, does not suffer from these complications because it does not require excitation light. Thus, the technique is exquisitely sensitive—-with the ability to see as few as ten cells in a mouse. Bioluminescence relies on luciferase enzymes that catalyze the oxidation of small-molecule substrates (luciferins), releasing photons of light in the process. Unfortunately, the optimal luciferases for in vivo use rely on the same luciferins, precluding studies of more than one feature at a time.
+
+To address this issue, I developed and analyzed a number of new luciferin probes, and created a selection platform to find mutually orthogonal luciferases and luciferins for multicomponent imaging. In contrast to the spectroscopic resolution of fluorescent tools, these probes were designed to exhibit substrate resolution. Combining luciferin analogs and mutant enzymes, we tested 20 luciferins with 207 luciferases, generating 4,140 enzyme-substrate combinations, and thus a potential for more than 4 million possible sets. Since it would be impractical to evaluate these manually, I derived a mathematical quantification of orthogonality to score each potential pairing. Next, I wrote a supercomputer algorithm to search this dataset for the highest-scoring pairs. The software provided a ranked list of mutually orthogonal enzyme-substrate pairs that were biochemically verified. Resolution was maintained when these probes were moved into mouse models, highlighting the speed and accuracy of my approach.
+
+My most recent work focused on increasing the practicality of these tools for preclinical imaging. The major drawbacks of our approach included temporal resolution and background emission. I addressed these issues by utilizing traditional spectral unmixing algorithms to deconvolute substrate signals mathematically. This enabled sequential imaging of substrates, and the ability to resolve smaller numbers of cells. With a top orthogonal pair I ``unmixed'' gradients of mutant luciferases in bacterial lysate and resolved mixtures of these mutants in mouse tumor models. I am currently applying these techniques to track cells involved in metastasis in mouse models.
 }
 
 

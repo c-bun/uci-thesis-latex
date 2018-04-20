@@ -1,9 +1,11 @@
+# TODO this does not work. adapt to xelatex? get rid of all the DVI stuff?
+
 PROJ := thesis
 
 SRC	:= $(PROJ).tex
 DEP	:= $(wildcard *.tex *.bib) ucithesis.cls
 
-OUT	:= .
+OUT	:= ./outputs
 
 DVI	:= $(OUT)/$(PROJ).dvi
 PDF	:= $(OUT)/$(PROJ).pdf
