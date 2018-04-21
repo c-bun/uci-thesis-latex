@@ -83,7 +83,7 @@
 % Very handy to speed up compilation if you're working on a certain
 % part of your thesis. It conserves page numbers, references, etc.
 % even for non-included files.
-%\includeonly{multicomponent_imaging}
+\includeonly{cross_coupling_luciferins}
 
 % Some customization for figures:
 \graphicspath{ {figures/} }
@@ -94,6 +94,8 @@
 \newcommand{\dluc}{{\footnotesize D}-luc}
 \newcommand{\cmpd}[1]{\textbf{#1}}
 \renewcommand{\textmu}{$\upmu$}
+\newcommand{\invivo}{\textit{in vivo}}
+\newcommand{\invitro}{\textit{in vitro}}
 
 % --- define a command for inserting a standard figure --- %
 % \define@key{stdFigure}{width}{\stdf@width{#1}}
@@ -122,9 +124,9 @@
 % Include the different components of your thesis, in separate files.
 % Using \include allows you to set \includeonly above.
 \include{introduction}
-\include{cross_coupling_luciferins}
 \include{orthogonal_pairs}
 \include{parallel_screening}
+\include{cross_coupling_luciferins}
 \include{multicomponent_imaging}
 % ... and so on
 
