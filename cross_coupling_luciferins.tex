@@ -2,22 +2,72 @@
 
 \chapter{Minimally perturbed luciferins for multicomponent imaging and cross coupling}
 \section{Introduction}
-% REVIEW place all the stuff below under the Cycluc heading?
-With a method for selection of orthogonal luciferin-luciferase pairs in hand, we turned to optimization of these pairings for \invivo{} use. Our kinetic studies of initial pairings indicated that our sterically modified luciferins had drastically increased K\textsubscript{m} values (\autoref{tb:kinetics}). Not only was this value inflated for the negative pairing, it was also high in the positively-paired mutant-analog combo. Previous work in collaboration with the Miller lab showed that a reduction in luciferin K\textsubscript{m} resulted in improvements in \invivo{} imaging.\cite{RN98}
-Conveniently, the cyclic luciferin (CycLuc) scaffold developed in the Miller lab contained modifications to only the 5' and 6' positions of the luciferin scaffold, leaving the 4' and 7' positions unmodified.\cite{RN101,Reddy:2010gaa}
-We hypothesized that addition of our lead modifications to these cites of the CycLuc scaffold may decrease K\textsubscript{m}, yet retain selectivity in our lead pairings.
-As demonstrated in \autoref{chap:orthog} and \autoref{chap:parallel}, the most promising compounds in terms of orthogonality and brightness were the methyl and bromo series (in addition to \dluc).
-Making such compounds necessitated a departure from the synthetic route demonstrated by Miller,\cite{Reddy:2010gaa} because the necessary indoline starting materials were not available.
-% TODO figure here with the proposed retrosynth alongside Miller? Should be in a presentation.
+
 
 \section{Brominated CycLuc luciferins for bright, multicomponent imaging}
+% REVIEW place all the stuff below under the Cycluc heading?
+With a method for selection of orthogonal luciferin-luciferase pairs in hand, we turned to optimization of these pairings for \invivo{} use. Our kinetic studies of initial pairings indicated that our sterically modified luciferins had drastically increased K\textsubscript{m} values (\autoref{tb:kinetics}). Not only was this value inflated for the negative pairing, it was also high in the positively-paired mutant-analog combo. Previous work in collaboration with the Miller lab showed that a reduction in luciferin K\textsubscript{m} resulted in improvements in \invivo{} imaging.\cite{Evanssyntheticluciferinimproves2014}
+Conveniently, the cyclic luciferin (CycLuc) scaffold developed in the Miller lab contained modifications to only the 5' and 6' positions of the luciferin scaffold, leaving the 4' and 7' positions unmodified.\cite{ReddyRobustlightemission2010,MoffordAminoluciferinsExtendFirefly2014}
+We hypothesized that addition of our lead modifications to these cites of the CycLuc scaffold may decrease K\textsubscript{m}, yet retain selectivity in our lead pairings.
+As demonstrated in \autoref{chap:orthog} and \autoref{chap:parallel}, the most promising compounds in terms of orthogonality and brightness were the methyl and bromo series (in addition to \dluc).
+We also thought that we could produce such compounds via only slight modification to our previously reported route to other brominated luciferins (\autoref{fig:cyclucRetro}).\cite{SteinhardtBrominatedLuciferinsAre2016}
+
+%%%% Figure: Retrosynthesis
+\begin{figure}[htbp]
+\includegraphics[scale=0.8]{cross_coupling_luciferins/cyclucRetro} % use scale for chemdraws only
+\centering
+\caption[Cyclic luciferin retrosyntheses.]{
+Cyclic luciferin retrosyntheses. \textit{Top:} Miller's retrosynthesis of CycLuc1. \textit{Bottom:} Proposed retrosynthesis of modified CycLuc scaffolds using our Appel's salt chemistry.
+}
+  \label{fig:cyclucRetro}
+\end{figure}
+%%%%
+
+Appel's salt would be used to install the fuzed thiazole ring to the indoline, while simultaneously installing the cyano group for final condensation with cysteine to produce the luciferin.
+I initially targeted the 4' and 7' bromoluciferins, as these were compounds that performed well in our script analysis, and were amenable to further diversification via cross coupling.
+\begin{thoughts}
+  Synthesis of these compounds were successful via use of a TFA protecting group on the indoline nitrogen. Turns out that TFA is the overall best protecting group, offering a good combination of installation and removal, and electronics for the ring. I also tried Boc and methyl (to make the CycLuc2 variant), and those were either too electron rich, or too hard to remove.
+\end{thoughts}
+Indoline bearing a nitro group at the necessary position is commercially available, and is easily TFA protected (\autoref{fig:4BrCycLuc}).\cite{ReddyRobustlightemission2010,MoffordAminoluciferinsExtendFirefly2014}
+Reduction with palladium on carbon proceeded smoothly, and without need for purification.
+The indoline was then dibrominated, and condensed with Appel's salt, via our previously described sequence.\cite{SteinhardtBrominatedLuciferinsAre2016}
+Palladium mediated cyclization of this thioformamide gave a mixture of two regioisomers, which were separable by column chromatography.
+Taking the desired isomer forward, a subsequent one-pot depretection and condensation with \Dcys{} gave \textbf{4'--BrCycLuc}.
+\begin{thoughts}
+  The undesired isomer was also taken forward and condensed. I called it \textbf{DaveLuc} in memory of all the Daves that we have had in lab. \textbf{DaveLuc} performed well in initial dose-responses, and might be an interesting 4'7' disubstituted compound to look at in the future.
+\end{thoughts}
+
+%%%% Figure: 4'BrCycLuc synthesis
+\begin{figure}[htbp]
+\includegraphics[scale=0.8]{cross_coupling_luciferins/4BrCycluc} % use scale for chemdraws only
+\centering
+\caption[Synthesis of \textbf{4'--BrCycLuc.}]{
+Synthesis of \textbf{4'--BrCycLuc.} Our route including Appel's salt condensation proved general for the CycLuc scaffolds.
+}
+  \label{fig:4BrCycLuc}
+\end{figure}
+%%%%
+
+Synthesis of \textbf{7'--BrCycLuc} proceeded similarly, with bromination at the 7' position occurring later in the sequence following deprotection of the benzothiazole.
+
+%%%% Figure: 7'BrCycLuc synthesis
+\begin{figure}[htbp]
+\includegraphics[scale=0.8]{cross_coupling_luciferins/7BrCycluc} % use scale for chemdraws only
+\centering
+\caption[Synthesis of \textbf{7'--BrCycLuc.}]{
+Synthesis of \textbf{7'--BrCycLuc.} Our route including Appel's salt condensation proved general for the CycLuc scaffolds.
+}
+  \label{fig:7BrCycLuc}
+\end{figure}
+%%%%
+
 
 \section{Suzuki cross-coupling of halogenated luciferins}
 
 \section{Conclusions and future directions}
 
 \bibliographystyle{achemso}
-\bibliography{thesis2}
+\bibliography{bibs/zoteroLib}
 
 %%% Local Variables: ***
 %%% mode: latex ***
