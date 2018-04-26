@@ -4,7 +4,7 @@
 \section{Introduction}
 
 % Figure: overall strategy %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[htb]
+\begin{figure}[htbp]
 \includegraphics[width = \textwidth]{multicomponent_imaging/mouse_diagram}
 \centering
 \caption[Bioluminescent substrate unmixing for the study of disease states]{
@@ -16,25 +16,59 @@ Bioluminescent substrate unmixing for the study of disease states. Sequential su
 
 
 \section{Results and Discussion}
-%%\subsection{Bioluminescent probes give reproducible patterns of substrate usage}
-
 \subsection{Linear unmixing algorithms distinguish orthogonal bioluminescent probes}
-% TODO need a figure here with the linear plots as well.
+Bioluminescent probes for \it{in vivo} multicomponent imaging must be bright, bioavailable molecules that can be synthesized in large quantities. With this in mind, we examined top pairings from our parallel screens\cite{RathbunParallelScreeningRapid2017} and chose \dluc{} and \bf{4'-BrLuc} as our lead pair.
+\dluciferin{} is a molecule that is familiar to the community, commercially available, and have proven robust in a vast range of imaging studies.\cite{PaleyBioluminescenceversatiletechnique2014}
+\bf{4'-BrLuc} is also a well-vetted molecule that has been the subject of several studies in our lab. Its synthesis is scalable and straightforward,\cite{SteinhardtBrominatedLuciferinsAre2016} and initial \it{in vivo} studies have shown that it retains selectivity and brightness \it{in vivo.}\cite{RathbunParallelScreeningRapid2017}
+
+\begin{thoughts}
+  Something here about how these molecules also tend to be intensity resolved? Figure?
+\end{thoughts}
+
+% Figure: initial pairs %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[htbp]
+\includegraphics[width = 8.9cm]{multicomponent_imaging/initial_pairs}
+\centering
+\caption[Initial mutants of interest for multicomponent bioluminescence imaging]{Initial mutants of interest for multicomponent bioluminescence imaging. Initial compound-mutant pairs were identified via parallel screening.\cite{RathbunParallelScreeningRapid2017} Each mutant selected demonstrated greater than 10-fold resolution in bacterial lysate. Compounds were administered at 100 \textmu{}M.
+}
+  \label{fig:initial_pairs}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Next, we set out to identify mutant luciferases that would be amenable to multicomponent imaging \it{in vivo} (\autoref{fig:mouse_diagram}). We aimed for two mutants that demonstrated greater than ten-fold selectivity for their matched luciferin, and retained robust light output. From our parallel screening data, we identified six mutants; three paired with \bf{4'-BrLuc} and three with \dluc{} (\autoref{fig:initial_pairs}).
+
+
 % Figure: bacterial unmixing %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[htb]
-\includegraphics[width = 13cm]{multicomponent_imaging/bacterial_unmixing}
+\begin{figure}[htbp]
+\includegraphics[width = 12.68cm]{multicomponent_imaging/bacterial_unmixing_v2}
 \centering
 \caption[Orthogonal bioluminescent probes can be distinguished in bacterial lysate]{
-Orthogonal bioluminescent probes can be distinguished in bacterial lysate. Based solely on the intensity of the light output, linear unmixing algorithms can distinguish orthogonal probes. Between images, substrates were added to all wells.
+Orthogonal bioluminescent probes can be distinguished in bacterial lysate. Based solely on the intensity of the light output, linear unmixing algorithms can distinguish orthogonal probes. \textbf{A)} Gradients of mutant luciferases in bacterial lysate were plated in an 8x8 square. \textbf{4'-BrLuc} was first added to each of the 64 wells, and light emission was measured. Second, \dluc{} was added to each of the same 64 wells, and light emission was again measured. The images were overlaid, and substrate unmixing was applied to the raw images. \textbf{B)} Quantification of signal in (C) fit via linear regression. The shaded area represents the 95\% confidence interval of the fit. \textbf{C)} Overlaid signal from raw images in (A). \textbf{D)} Quantification of signal after substrate unmixing fit via linear regression. The shaded area represents the 95\% confidence interval of the fit. \textbf{E)} Overlaid signal after substrate unmixing.
 }
   \label{fig:bacterial_unmixing}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% Figure: mammalian unmixing %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}[htbp]
+%\includegraphics[width = 18.3cm]{multicomponent_imaging/DB7_unmixing}
+\includegraphics[width = \textwidth]{multicomponent_imaging/DB7_unmixing}
+\centering
+\caption[Orthogonal bioluminescent probes can be distinguished in mammalian cells]{
+Three orthogonal probes can be distinguished in mammalian cells. Gradients of cells expressing firefly luciferase mutants \bf{54} and \bf{86}, and \it{Gaussia} luciferase were plated in a triangle, with 60,000 cells per well. \bf{A)} Quantification of each channel from (B) fit via linear regression. The shaded area represents the 95\% confidence interval of the fit. \bf{B)} Overlay of raw signal from mixed images. \bf{C)} Quantification of each channel from the unmixed image in (D) fit via linear regression. The shaded area represents the 95\% confidence interval of the fit. \bf{D)} Overlay of the unmixed channels.
+}
+  \label{fig:DB7_unmixing}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{Mixed cell populations can be distinguished \textit{in vivo}.}
 % TODO need a plot with quantification of mouse signals?
+% QUESTION maybe don't use unmixing here? it doesn't seem to make a difference.
+
+% TODO figure for mouse screen here and plot of resultant data.
+
 % Figure: mouse unmixing %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{figure}[htb]
+\begin{figure}[htbp]
 \includegraphics[width = 14cm]{multicomponent_imaging/mouse_unmixing}
 \centering
 \caption[Orthogonal bioluminescent probes can be distinguished in mice]{
@@ -48,7 +82,7 @@ Compounds were administered sequentially via i.p\. injection.
 \section{Conclusions and future directions}
 
 \bibliographystyle{achemso}
-\bibliography{bibs/thesis2}
+\bibliography{bibs/zoteroLib}
 
 %%% Local Variables: ***
 %%% mode: latex ***

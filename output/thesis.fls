@@ -198,7 +198,12 @@ INPUT multicomponent_imaging.tex
 INPUT multicomponent_imaging.tex
 INPUT figures/multicomponent_imaging/mouse_diagram.pdf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
-INPUT figures/multicomponent_imaging/bacterial_unmixing.pdf
+OUTPUT ./output/comment.cut
+INPUT ./output/comment.cut
+INPUT ./output/comment.cut
+INPUT figures/multicomponent_imaging/initial_pairs.pdf
+INPUT figures/multicomponent_imaging/bacterial_unmixing_v2.pdf
+INPUT figures/multicomponent_imaging/DB7_unmixing.pdf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
 INPUT figures/multicomponent_imaging/mouse_unmixing.pdf
 INPUT ./output/multicomponent_imaging.bbl
