@@ -2,6 +2,15 @@
 
 \chapter{Multicomponent bioluminescence imaging via substrate unmixing}
 \section{Introduction}
+A cornerstone of fluorescence imaging is the ability to monitor multiple subjects in tandem.\cite{RodriguezGrowingGlowingToolbox2017}
+Indeed, spatiotemporal information about a species of interest is of limited use without the ability to also visualize its interacting partners. Multicolored fluorescent probes have brought a multitude of cellular interactions to light, from the interactions between immune and cancer cells\cite{GermainDecadeImagingCellular2012}, to the contacts formed between neurons.\cite{ChoiInterregionalsynapticmaps2018}
+
+Bioluminescence imaging (BLI) is a technique complementary to fluorescence imaging that enables spatiotemporal localization of cells throughout the body of mice and other model organisms. BLI utilizes genetically encoded luciferase enzymes and exogenously administered luciferin substrates to emit photons of light. Because tissue does not normally glow, this technique is exquisitely sensitive, with the ability to detect 1-10 cells in a mouse.
+This sensitivity has made BLI the go-to technique for monitoring cell proliferation and migration in mouse models.\cite{PaleyBioluminescenceversatiletechnique2014}
+Despite the utility of the tool, multicomponent imaging has yet to be developed for BLI. We have set out to develop robust, multicomponent bioluminescence imaging.
+First, we developed a variety new synthetic techniques to enable diversification of firefly luciferin.\cite{McCutcheonRapidscalableassembly2015,McCutcheonExpedientsynthesiselectronically2012,SteinhardtDesignSynthesisAlkynyl2016,SteinhardtBrominatedLuciferinsAre2016,JonesOrthogonalLuciferaseLuciferinPairs2017}
+Next, we mutated firefly luciferase to selectively process these luciferin analogs.\cite{JonesOrthogonalLuciferaseLuciferinPairs2017,RathbunParallelScreeningRapid2017}
+These orthogonal luciferin-luciferase pairs retained selectivity in mouse models.\cite{RathbunParallelScreeningRapid2017} In this work, we demonstrate the ability of these probes to distinguish mixed populations, and apply this methodology to a cancer metastasis model.
 
 % Figure: overall strategy %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[htbp]
@@ -14,6 +23,7 @@ Bioluminescent substrate unmixing for the study of disease states. Sequential su
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Because we are relying on substrate resolution (not color resolution) for multicomponent imaging, our technique required further 
 
 \section{Results and Discussion}
 \subsection{Linear unmixing algorithms distinguish orthogonal bioluminescent probes}
@@ -35,8 +45,17 @@ Bioluminescent probes for \it{in vivo} multicomponent imaging must be bright, bi
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Next, we set out to identify mutant luciferases that would be amenable to multicomponent imaging \it{in vivo} (\autoref{fig:mouse_diagram}). We aimed for two mutants that demonstrated greater than ten-fold selectivity for their matched luciferin, and retained robust light output. From our parallel screening data, we identified six mutants; three paired with \bf{4'-BrLuc} and three with \dluc{} (\autoref{fig:initial_pairs}).
+\begin{thoughts}
+  Maybe include a table of mutations alongside the figure to highlight commonalities?
+\end{thoughts}
 
+Next, we set out to identify mutant luciferases that would be amenable to multicomponent imaging \it{in vivo} (\autoref{fig:mouse_diagram}). We aimed for two mutants that demonstrated greater than ten-fold selectivity for their matched luciferin, and retained robust light output. From our parallel screening data, we identified six mutants; three paired with \bf{4'-BrLuc} and three with \dluc{} (\autoref{fig:initial_pairs}).
+Mutants 50, 51, and 54 harbored similar mutations, with each changing Ser 347 to Gly or Ala. It is likely that the removal of the serine hydroxyl group opens space in the active site for the bromine.
+\dluc{} was positively paired with mutants 37, 86, and 93; each with a mutation at Arg 218 to Lys. This mutation alone (in the case of mutant 37) is enough to drastically reduce light emission with \bf{4'-BrLuc} and has been characterized in several other studies (\highlight{cite some R218K work}).
+
+For a proof-of-concept of our technique, we designed an experiment to simulate multicomponent imaging \it{in vivo} at a variety of probe ratios (\autoref{fig:bacterial_unmixing}). \it{E. coli} expressing the mutants of interest were lysed, and lysates were mixed in a gradient of 64 concentrations (\autoref{fig:bacterial_unmixing}A). \bf{4'-BrLuc} was administered to each well, and an image of the plate was acquired. \dluciferin{} was next added to the same 64 wells, and a second image was acquired.
+When these images were normalized and overlaid (\autoref{fig:bacterial_unmixing}C), it was clear that the corresponding signal was not reflexive of the lysate ratio (\autoref{fig:bacterial_unmixing}B, \highlight{supplementary figure?}). While channel 1 (the first image that was acquired following addition of \bf{4'-BrLuc}), showed a linear relationship across the entire range of mutant concentrations and ratios, the second channel showed a high error (R\textsuperscript{2} = 0.598).
+This result makes sense because residual light from the addition of \bf{4'-BrLuc} was present in the sample, so the second image reflected a combination of both signals.
 
 % Figure: bacterial unmixing %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[htbp]
@@ -49,23 +68,37 @@ Orthogonal bioluminescent probes can be distinguished in bacterial lysate. Based
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+To produce an output that is more reflective of the abundance of each mutant in the mixed samples, we turned to linear unmixing, a technique typically used in the field of fluorescence imaging (\highlight{cite something here}). Linear unmixing algorithms are commonly used in fluorescence microscopy when visualizing two fluorophores that have partially overlapping spectra. Overlap in emission wavelengths can cause convolution of signal that makes quantification of relative abundance difficult. We faced a similar with our substrate resolved probes. Though we were not concerned with the color of the bioluminescent emission, we thought that these same algorithms could be used to unmix \it{substrate} overlap. Indeed, when unmixing is applied to the gradient of mixed lysate, channel two is distinguished much more accurately (\autoref{fig:bacterial_unmixing}D and E). This is apparent visually in \autoref{fig:bacterial_unmixing}E, as well as with the R\textsuperscript{2} value of channel 2 in \autoref{fig:bacterial_unmixing}D.
+With this technique we were able to detect the presence of 6 \textmu{}L of mutant \bf{54} lysate in 45 \textmu{}L of mutant \bf{93} lysate (and the reverse) (\highlight{Maybe highlight these wells/points in the figure??}).
+
+\begin{thoughts}
+  Probably would be nice to include a blinded experiment where lysate mixtures are predicted? We could then quantify how close we were able to get to the actual mixtures?
+\end{thoughts}
+
 % Figure: mammalian unmixing %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[htbp]
 %\includegraphics[width = 18.3cm]{multicomponent_imaging/DB7_unmixing}
 \includegraphics[width = \textwidth]{multicomponent_imaging/DB7_unmixing}
 \centering
 \caption[Orthogonal bioluminescent probes can be distinguished in mammalian cells]{
-Three orthogonal probes can be distinguished in mammalian cells. Gradients of cells expressing firefly luciferase mutants \bf{54} and \bf{86}, and \it{Gaussia} luciferase were plated in a triangle, with 60,000 cells per well. \bf{A)} Quantification of each channel from (B) fit via linear regression. The shaded area represents the 95\% confidence interval of the fit. \bf{B)} Overlay of raw signal from mixed images. \bf{C)} Quantification of each channel from the unmixed image in (D) fit via linear regression. The shaded area represents the 95\% confidence interval of the fit. \bf{D)} Overlay of the unmixed channels.
+Three orthogonal probes can be distinguished in mammalian cells. Gradients of cells expressing firefly luciferase mutants \bf{54} and \bf{86}, and \it{Gaussia} luciferase were plated in a triangle, with 60,000 cells per well. \bf{4'-BrLuc} (500 \textmu{}M), \dluciferin{} (500 \textmu{}M), and coelenterazine (40 \textmu{}M) were added in sequence. \bf{A)} Quantification of each channel from (B) fit via linear regression. The shaded area represents the 95\% confidence interval of the fit. \bf{B)} Overlay of raw signal from mixed images. \bf{C)} Quantification of each channel from the unmixed image in (D) fit via linear regression. The shaded area represents the 95\% confidence interval of the fit. \bf{D)} Overlay of the unmixed channels.
 }
   \label{fig:DB7_unmixing}
 \end{figure}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Next, we sought to test this method in mammalian cells, and determine whether we could unmix three luciferin signals (\autoref{fig:DB7_unmixing}). For these experiments we added \it{Gaussia} luciferase and coelenterazine (CTZ) as our third luciferase-luciferin pair (Channel 3), with mouse DB7 cells stably expressing mutants \bf{54}, \bf{86}, and \bf{Gluc}. Mixtures of cells totaling 60,000 were plated in a triangle of gradients and imaged between substrate additions (\bf{4'-BrLuc}, \dluc{}, and CTZ respectively). Overlay of the channels showed significant error in channels 1 and 3 (R\textsuperscript{2} values of 0.730 and 0.364 respectively, \autoref{fig:DB7_unmixing}A and B). Upon substrate unmixing, correlations improved considerably, with the proper gradient readily visualized in the overlaid image (\autoref{fig:DB7_unmixing}C and D).
+
+This experiment highlights the utility of this technique, as even perfectly substrate resolved pairs (in the case of firefly and \it{Gaussia} luciferases) are not perfectly resolvable without applying unmixing algorithms.
+
 \subsection{Mixed cell populations can be distinguished \textit{in vivo}.}
 % TODO need a plot with quantification of mouse signals?
 % QUESTION maybe don't use unmixing here? it doesn't seem to make a difference.
-
 % TODO figure for mouse screen here and plot of resultant data.
+
+\begin{thoughts}
+  It might be nice to show here that unmixing was not needed, and introduce the concept of intensity resolution here.
+\end{thoughts}
 
 % Figure: mouse unmixing %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure}[htbp]
@@ -73,7 +106,7 @@ Three orthogonal probes can be distinguished in mammalian cells. Gradients of ce
 \centering
 \caption[Orthogonal bioluminescent probes can be distinguished in mice]{
 Orthogonal bioluminescent probes can be distinguished in mice.
-Compounds were administered sequentially via i.p\. injection.
+Compounds were administered sequentially via i.p. injection.
 }
   \label{fig:mouse_unmixing}
 \end{figure}

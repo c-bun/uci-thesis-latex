@@ -71,13 +71,6 @@
 % numbering goes only to subsections).
 %\setcounter{secnumdepth}{4}
 
-
-% Set this to only select a subset of the includes directives below.
-% Very handy to speed up compilation if you're working on a certain
-% part of your thesis. It conserves page numbers, references, etc.
-% even for non-included files.
-%\includeonly{cross_coupling_luciferins}
-
 % Some customization for figures:
 \graphicspath{ {figures/} }
 %\renewcommand{\floatpagefraction}{.8} % If the fig takes up more than 80% of a page, give it the entire page.
@@ -85,10 +78,12 @@
 % The comment package enables me to add actually useful information to my thesis. Added by c-bun.
 \usepackage{comment}
 \usepackage[usenames, dvipsnames]{color}
+% TODO make this an actual inset box with text in it labeled "Colin's thoughts:" ?
 \specialcomment{thoughts}{\begingroup\color{RubineRed}\itshape}{\endgroup}
 %\excludecomment{thoughts} % Uncomment for turning in to the library/committee.
 
 % Some customization for writing easier. Added by c-bun.
+\newcommand{\highlight}[1]{\textit{\textcolor{red}{#1}}}
 \newcommand{\dluciferin}{{\footnotesize D}-luciferin}
 \newcommand{\dluc}{{\footnotesize D}-luc}
 \newcommand{\Dcys}{{\footnotesize D}-cysteine}
@@ -107,6 +102,12 @@
 \setlength{\parindent}{4em}
 \setlength{\parskip}{1em}
 
+% Set this to only select a subset of the includes directives below.
+% Very handy to speed up compilation if you're working on a certain
+% part of your thesis. It conserves page numbers, references, etc.
+% even for non-included files.
+\includeonly{multicomponent_imaging}
+
 \begin{document}
 
 % Preliminary pages are always loaded (TOC, CV, etc.)
@@ -114,9 +115,9 @@
 
 % Include the different components of your thesis, in separate files.
 % Using \include allows you to set \includeonly above.
-%\include{introduction}
-%\include{orthogonal_pairs}
-%\include{parallel_screening}
+\include{introduction}
+\include{orthogonal_pairs}
+\include{parallel_screening}
 \include{cross_coupling_luciferins}
 \include{multicomponent_imaging}
 % ... and so on
